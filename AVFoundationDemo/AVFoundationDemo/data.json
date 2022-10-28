@@ -1,0 +1,17 @@
+[
+    {
+        "title":"001-AVFoundation初识：语音阅读器",
+        "class": "JHSpeechController"
+    },
+    {
+        "title":"002-AVFoundation音频播放器：AVAudioPlayer",
+        "class": "JHAudioPlayerController"
+    },
+    {
+        "title":"003-AVFoundation录音：AVAudioRecoder",
+        "class": "JHAudioRecoderController"
+    }
+]
+
+
+ 
