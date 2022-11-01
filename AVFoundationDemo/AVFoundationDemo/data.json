@@ -4,11 +4,11 @@
         "class": "JHSpeechController"
     },
     {
-        "title":"002-AVFoundation音频播放器：AVAudioPlayer",
+        "title":"002-AVFoundation音频播放器",
         "class": "JHAudioPlayerController"
     },
     {
-        "title":"003-AVFoundation录音：AVAudioRecoder",
+        "title":"003-AVFoundation录音",
         "class": "JHAudioRecoderController"
     }
 ]

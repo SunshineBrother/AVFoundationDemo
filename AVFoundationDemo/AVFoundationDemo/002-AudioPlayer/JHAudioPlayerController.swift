@@ -54,7 +54,6 @@ class JHAudioPlayerController: UIViewController {
 }
 
 // MARK: - - 基础 --
-
 extension JHAudioPlayerController {
     /// 创建一个音频播放器
     /// - Parameters:
@@ -115,7 +114,6 @@ extension JHAudioPlayerController {
 }
 
 // MARK: - - 中断通知 --
-
 extension JHAudioPlayerController {
     // 中断通知
     @objc func handleInterruption(notification: NSNotification) {

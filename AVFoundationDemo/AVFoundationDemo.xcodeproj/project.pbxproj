@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		340A68C9290BA3C900C1DBCC /* JHAudioRecoderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340A68C8290BA3C900C1DBCC /* JHAudioRecoderController.swift */; };
 		340A68CC290BAB9B00C1DBCC /* 576bc2fc91ef22121.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 340A68CB290BAB9B00C1DBCC /* 576bc2fc91ef22121.mp4 */; };
 		340A68CE290BAE4800C1DBCC /* Wonderful Tonight.wav in Resources */ = {isa = PBXBuildFile; fileRef = 340A68CD290BAE4800C1DBCC /* Wonderful Tonight.wav */; };
 		340A68D5290BB7A300C1DBCC /* JHAudioPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340A68D3290BB7A300C1DBCC /* JHAudioPlayerController.swift */; };
@@ -23,6 +22,9 @@
 		3458211D290A71EE00B5D98B /* AVFoundationDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3458211C290A71EE00B5D98B /* AVFoundationDemoUITestsLaunchTests.swift */; };
 		3458212A290A727D00B5D98B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 34582129290A727D00B5D98B /* data.json */; };
 		3458212D290A730800B5D98B /* JHSpeechController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3458212C290A730800B5D98B /* JHSpeechController.swift */; };
+		34D2C8B32910C27E00844DF3 /* JHAudioRecoderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D2C8B12910C27E00844DF3 /* JHAudioRecoderController.swift */; };
+		34D2C8B42910C27E00844DF3 /* JHAudioRecoderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D2C8B22910C27E00844DF3 /* JHAudioRecoderController.xib */; };
+		34D2C8B72910C48700844DF3 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D2C8B62910C48700844DF3 /* FileManager.swift */; };
 		9EF51484A5CA6280175389E1 /* Pods_AVFoundationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35939E7BCB0CB9160F6F78A6 /* Pods_AVFoundationDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +47,6 @@
 
 /* Begin PBXFileReference section */
 		00E20ED29C5D21D36F85DCFE /* Pods-AVFoundationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationDemo.release.xcconfig"; path = "Target Support Files/Pods-AVFoundationDemo/Pods-AVFoundationDemo.release.xcconfig"; sourceTree = "<group>"; };
-		340A68C8290BA3C900C1DBCC /* JHAudioRecoderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHAudioRecoderController.swift; sourceTree = "<group>"; };
 		340A68CB290BAB9B00C1DBCC /* 576bc2fc91ef22121.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 576bc2fc91ef22121.mp4; sourceTree = "<group>"; };
 		340A68CD290BAE4800C1DBCC /* Wonderful Tonight.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Wonderful Tonight.wav"; sourceTree = "<group>"; };
 		340A68D3290BB7A300C1DBCC /* JHAudioPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHAudioPlayerController.swift; sourceTree = "<group>"; };
@@ -65,6 +66,9 @@
 		3458211C290A71EE00B5D98B /* AVFoundationDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVFoundationDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		34582129290A727D00B5D98B /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3458212C290A730800B5D98B /* JHSpeechController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHSpeechController.swift; sourceTree = "<group>"; };
+		34D2C8B12910C27E00844DF3 /* JHAudioRecoderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHAudioRecoderController.swift; sourceTree = "<group>"; };
+		34D2C8B22910C27E00844DF3 /* JHAudioRecoderController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHAudioRecoderController.xib; sourceTree = "<group>"; };
+		34D2C8B62910C48700844DF3 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		35939E7BCB0CB9160F6F78A6 /* Pods_AVFoundationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFoundationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86386F06252E73739D30278 /* Pods-AVFoundationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationDemo.debug.xcconfig"; path = "Target Support Files/Pods-AVFoundationDemo/Pods-AVFoundationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +119,8 @@
 		340A68C7290BA3BD00C1DBCC /* 003-AudioRecoder */ = {
 			isa = PBXGroup;
 			children = (
-				340A68C8290BA3C900C1DBCC /* JHAudioRecoderController.swift */,
+				34D2C8B12910C27E00844DF3 /* JHAudioRecoderController.swift */,
+				34D2C8B22910C27E00844DF3 /* JHAudioRecoderController.xib */,
 			);
 			path = "003-AudioRecoder";
 			sourceTree = "<group>";
@@ -158,10 +163,11 @@
 				345820FB290A71ED00B5D98B /* SceneDelegate.swift */,
 				345820FD290A71ED00B5D98B /* ViewController.swift */,
 				34582129290A727D00B5D98B /* data.json */,
-				340A68CA290BAA5400C1DBCC /* src */,
 				340A68C7290BA3BD00C1DBCC /* 003-AudioRecoder */,
 				340A68C4290BA36E00C1DBCC /* 002-AudioPlayer */,
 				3458212B290A72E900B5D98B /* 001-Speech */,
+				340A68CA290BAA5400C1DBCC /* src */,
+				34D2C8B52910C43F00844DF3 /* utils */,
 				345820FF290A71ED00B5D98B /* Main.storyboard */,
 				34582102290A71EE00B5D98B /* Assets.xcassets */,
 				34582104290A71EE00B5D98B /* LaunchScreen.storyboard */,
@@ -193,6 +199,14 @@
 				3458212C290A730800B5D98B /* JHSpeechController.swift */,
 			);
 			path = "001-Speech";
+			sourceTree = "<group>";
+		};
+		34D2C8B52910C43F00844DF3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				34D2C8B62910C48700844DF3 /* FileManager.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		D01AF58A811135C1A4F98638 /* Pods */ = {
@@ -311,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				340A68D6290BB7A300C1DBCC /* JHAudioPlayerController.xib in Resources */,
+				34D2C8B42910C27E00844DF3 /* JHAudioRecoderController.xib in Resources */,
 				340A68CC290BAB9B00C1DBCC /* 576bc2fc91ef22121.mp4 in Resources */,
 				34582106290A71EE00B5D98B /* LaunchScreen.storyboard in Resources */,
 				340A68CE290BAE4800C1DBCC /* Wonderful Tonight.wav in Resources */,
@@ -384,8 +399,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				345820FE290A71ED00B5D98B /* ViewController.swift in Sources */,
-				340A68C9290BA3C900C1DBCC /* JHAudioRecoderController.swift in Sources */,
+				34D2C8B32910C27E00844DF3 /* JHAudioRecoderController.swift in Sources */,
 				3458212D290A730800B5D98B /* JHSpeechController.swift in Sources */,
+				34D2C8B72910C48700844DF3 /* FileManager.swift in Sources */,
 				345820FA290A71ED00B5D98B /* AppDelegate.swift in Sources */,
 				345820FC290A71ED00B5D98B /* SceneDelegate.swift in Sources */,
 				340A68D5290BB7A300C1DBCC /* JHAudioPlayerController.swift in Sources */,
@@ -566,6 +582,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YR627Z7UA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AVFoundationDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -594,6 +611,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YR627Z7UA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AVFoundationDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
