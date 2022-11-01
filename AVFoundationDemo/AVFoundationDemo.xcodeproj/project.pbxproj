@@ -22,6 +22,7 @@
 		3458211D290A71EE00B5D98B /* AVFoundationDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3458211C290A71EE00B5D98B /* AVFoundationDemoUITestsLaunchTests.swift */; };
 		3458212A290A727D00B5D98B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 34582129290A727D00B5D98B /* data.json */; };
 		3458212D290A730800B5D98B /* JHSpeechController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3458212C290A730800B5D98B /* JHSpeechController.swift */; };
+		3463578E291118E600322A37 /* String+Extentsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3463578D291118E600322A37 /* String+Extentsion.swift */; };
 		34D2C8B32910C27E00844DF3 /* JHAudioRecoderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D2C8B12910C27E00844DF3 /* JHAudioRecoderController.swift */; };
 		34D2C8B42910C27E00844DF3 /* JHAudioRecoderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D2C8B22910C27E00844DF3 /* JHAudioRecoderController.xib */; };
 		34D2C8B72910C48700844DF3 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D2C8B62910C48700844DF3 /* FileManager.swift */; };
@@ -66,6 +67,7 @@
 		3458211C290A71EE00B5D98B /* AVFoundationDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVFoundationDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		34582129290A727D00B5D98B /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3458212C290A730800B5D98B /* JHSpeechController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHSpeechController.swift; sourceTree = "<group>"; };
+		3463578D291118E600322A37 /* String+Extentsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extentsion.swift"; sourceTree = "<group>"; };
 		34D2C8B12910C27E00844DF3 /* JHAudioRecoderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHAudioRecoderController.swift; sourceTree = "<group>"; };
 		34D2C8B22910C27E00844DF3 /* JHAudioRecoderController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHAudioRecoderController.xib; sourceTree = "<group>"; };
 		34D2C8B62910C48700844DF3 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				34D2C8B62910C48700844DF3 /* FileManager.swift */,
+				3463578D291118E600322A37 /* String+Extentsion.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				3458212D290A730800B5D98B /* JHSpeechController.swift in Sources */,
 				34D2C8B72910C48700844DF3 /* FileManager.swift in Sources */,
 				345820FA290A71ED00B5D98B /* AppDelegate.swift in Sources */,
+				3463578E291118E600322A37 /* String+Extentsion.swift in Sources */,
 				345820FC290A71ED00B5D98B /* SceneDelegate.swift in Sources */,
 				340A68D5290BB7A300C1DBCC /* JHAudioPlayerController.swift in Sources */,
 			);

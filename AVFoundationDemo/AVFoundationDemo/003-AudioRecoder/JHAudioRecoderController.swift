@@ -9,11 +9,18 @@ import UIKit
 import AVFoundation
 var count = 0
 let recoder = "JHAudioRecoderController"
-class JHAudioRecoderController: UIViewController {
+
+class AudioRecoderModel {
+    var title = ""
+    var path = ""
+}
+
+class JHAudioRecoderController: UIViewController, AVAudioRecorderDelegate {
     // 时间
     @IBOutlet weak var timeLabel: UILabel!
     // tableView
     @IBOutlet weak var tableView: UITableView!
+    var dataList: [AudioRecoderModel] = Array()
     // 播放
     var audioPlayer: AVAudioPlayer?
     // 录音
@@ -23,23 +30,27 @@ class JHAudioRecoderController: UIViewController {
     var timer: Timer?
     deinit {
         self.audioRecorder = nil
+        self.audioPlayer = nil
+        self.timer = nil
         print("销毁：JHAudioRecoderController")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        AVAudioSession.sharedInstance().requestRecordPermission { granted in
+        AVAudioSession.sharedInstance().requestRecordPermission { [weak self]granted in
             if granted {
                 print("已授权")
+                self?.initAudioRecorder()
             } else {
                 print("未授权")
             }
         }
-
-        initAudioRecorder()
+ 
         if let num: Int = UserDefaults.standard.object(forKey: recoder) as? Int {
             count = num
         }
+  
+        getData()
     }
 
     // 初始化录音设备
@@ -50,10 +61,12 @@ class JHAudioRecoderController: UIViewController {
                      AVSampleRateKey: 44100.0,
                AVNumberOfChannelsKey:1,
             AVEncoderBitDepthHintKey:16,
-            AVEncoderAudioQualityKey:AVAudioQuality.medium
+            AVEncoderAudioQualityKey:AVAudioQuality.medium.rawValue
         ] as [String : Any]
         do {
             audioRecorder = try AVAudioRecorder.init(url: URL(fileURLWithPath: filePath), settings: setting)
+            audioRecorder?.delegate = self
+            audioRecorder?.isMeteringEnabled = true
             audioRecorder?.prepareToRecord()
         } catch let error {
             print("error:\(error)")
@@ -79,9 +92,11 @@ class JHAudioRecoderController: UIViewController {
         audioRecorder?.stop()
         count += 1
         UserDefaults.standard.set(count, forKey: recoder)
-        saveRecoder(name: "录音")
+        saveRecoder(name: "recoder")
         timer?.invalidate()
         timeLabel.text = "00:00:00"
+        
+        getData()
     }
     
     
@@ -94,7 +109,39 @@ class JHAudioRecoderController: UIViewController {
             RunLoop.main.add(timer, forMode: .common)
         }
     }
+ 
+    func getData() {
+        let docsDir = MyFileManager.share.getDocumentsPath()
+        guard let subpaths = FileManager.default.subpaths(atPath: docsDir) else {
+            return
+        }
+        for item in subpaths {
+            let model = AudioRecoderModel()
+            model.title = item
+            model.path = docsDir + "/" + item
+            dataList.append(model)
+        }
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.reloadData()
+    }
     
+}
+
+extension JHAudioRecoderController {
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        print(#function)
+    }
+
+    func audioRecorderEncodeErrorDidOccur(_ recorder: AVAudioRecorder, error: Error?) {
+        print(#function)
+    }
+    func audioRecorderBeginInterruption(_ recorder: AVAudioRecorder) {
+        print(#function)
+    }
+    func audioRecorderEndInterruption(_ recorder: AVAudioRecorder, withOptions flags: Int) {
+        print(#function)
+    }
 }
 // MARK: - 录音 -
 extension JHAudioRecoderController {
@@ -135,16 +182,42 @@ extension JHAudioRecoderController {
  
 }
 
+extension JHAudioRecoderController: UITableViewDelegate, UITableViewDataSource {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.dataList.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        if cell == nil {
+            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+        }
+        
+        let model = self.dataList[indexPath.row]
+        cell?.textLabel?.text = model.title
+        
+        return cell!
+    }
+ 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = dataList[indexPath.row]
+        audioPlayer = audioPlayerEvent(file: model.path)
+        if audioPlayer?.isPlaying == true {
+            audioPlayer?.stop()
+        }
+        audioPlayer?.play()
+    }
+}
+
 // MARK: - 播放 -
 extension JHAudioRecoderController {
     /// 创建一个音频播放器
     /// - Parameters:
     ///   - file: 文件名
     ///   - withExtension: 文件格式
-    func audioPlayer(file: String, withExtension: String) -> AVAudioPlayer? {
-        guard let fileUrl = Bundle.main.url(forResource: file, withExtension: withExtension) else { return nil }
+    func audioPlayerEvent(file: String) -> AVAudioPlayer? {
         do {
-            let audio = try AVAudioPlayer(contentsOf: fileUrl)
+            let audio = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: file))
             /// 准备播放，调用方法是可选的，当调用play的时会隐形激活，不过在创建时调用会降低延迟
             audio.prepareToPlay()
             return audio
@@ -153,4 +226,5 @@ extension JHAudioRecoderController {
         }
         return nil
     }
+      
 }
