@@ -48,8 +48,6 @@ extension AppDelegate {
         } catch let error {
             print("Category Error: \(error)")
         }
-        
-        
         do {
             try session.setActive(true)
         } catch let error {
