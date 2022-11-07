@@ -11,6 +11,8 @@
 		340A68CE290BAE4800C1DBCC /* Wonderful Tonight.wav in Resources */ = {isa = PBXBuildFile; fileRef = 340A68CD290BAE4800C1DBCC /* Wonderful Tonight.wav */; };
 		340A68D5290BB7A300C1DBCC /* JHAudioPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340A68D3290BB7A300C1DBCC /* JHAudioPlayerController.swift */; };
 		340A68D6290BB7A300C1DBCC /* JHAudioPlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340A68D4290BB7A300C1DBCC /* JHAudioPlayerController.xib */; };
+		343FCF492918A2F5006C391C /* JHAssetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FCF472918A2F5006C391C /* JHAssetController.swift */; };
+		343FCF4A2918A2F5006C391C /* JHAssetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 343FCF482918A2F5006C391C /* JHAssetController.xib */; };
 		345820FA290A71ED00B5D98B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345820F9290A71ED00B5D98B /* AppDelegate.swift */; };
 		345820FC290A71ED00B5D98B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345820FB290A71ED00B5D98B /* SceneDelegate.swift */; };
 		345820FE290A71ED00B5D98B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345820FD290A71ED00B5D98B /* ViewController.swift */; };
@@ -52,6 +54,8 @@
 		340A68CD290BAE4800C1DBCC /* Wonderful Tonight.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Wonderful Tonight.wav"; sourceTree = "<group>"; };
 		340A68D3290BB7A300C1DBCC /* JHAudioPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHAudioPlayerController.swift; sourceTree = "<group>"; };
 		340A68D4290BB7A300C1DBCC /* JHAudioPlayerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHAudioPlayerController.xib; sourceTree = "<group>"; };
+		343FCF472918A2F5006C391C /* JHAssetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHAssetController.swift; sourceTree = "<group>"; };
+		343FCF482918A2F5006C391C /* JHAssetController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHAssetController.xib; sourceTree = "<group>"; };
 		345820F6290A71ED00B5D98B /* AVFoundationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345820F9290A71ED00B5D98B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		345820FB290A71ED00B5D98B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,15 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		343FCF462918A2DB006C391C /* 004-JHAssetController */ = {
+			isa = PBXGroup;
+			children = (
+				343FCF472918A2F5006C391C /* JHAssetController.swift */,
+				343FCF482918A2F5006C391C /* JHAssetController.xib */,
+			);
+			path = "004-JHAssetController";
+			sourceTree = "<group>";
+		};
 		345820ED290A71ED00B5D98B = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +178,7 @@
 				345820FB290A71ED00B5D98B /* SceneDelegate.swift */,
 				345820FD290A71ED00B5D98B /* ViewController.swift */,
 				34582129290A727D00B5D98B /* data.json */,
+				343FCF462918A2DB006C391C /* 004-JHAssetController */,
 				340A68C7290BA3BD00C1DBCC /* 003-AudioRecoder */,
 				340A68C4290BA36E00C1DBCC /* 002-AudioPlayer */,
 				3458212B290A72E900B5D98B /* 001-Speech */,
@@ -329,6 +343,7 @@
 			files = (
 				340A68D6290BB7A300C1DBCC /* JHAudioPlayerController.xib in Resources */,
 				34D2C8B42910C27E00844DF3 /* JHAudioRecoderController.xib in Resources */,
+				343FCF4A2918A2F5006C391C /* JHAssetController.xib in Resources */,
 				340A68CC290BAB9B00C1DBCC /* 576bc2fc91ef22121.mp4 in Resources */,
 				34582106290A71EE00B5D98B /* LaunchScreen.storyboard in Resources */,
 				340A68CE290BAE4800C1DBCC /* Wonderful Tonight.wav in Resources */,
@@ -401,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343FCF492918A2F5006C391C /* JHAssetController.swift in Sources */,
 				345820FE290A71ED00B5D98B /* ViewController.swift in Sources */,
 				34D2C8B32910C27E00844DF3 /* JHAudioRecoderController.swift in Sources */,
 				3458212D290A730800B5D98B /* JHSpeechController.swift in Sources */,

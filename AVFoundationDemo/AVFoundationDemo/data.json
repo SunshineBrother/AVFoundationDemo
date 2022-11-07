@@ -10,6 +10,9 @@
     {
         "title":"003-AVFoundation录音",
         "class": "JHAudioRecoderController"
+    },{
+        "title":"004-AVAsset:资源&元数据",
+        "class": "JHAssetController"
     }
 ]
 
