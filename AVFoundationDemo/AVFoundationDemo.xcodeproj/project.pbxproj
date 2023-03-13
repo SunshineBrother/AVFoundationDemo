@@ -11,6 +11,7 @@
 		340A68CE290BAE4800C1DBCC /* Wonderful Tonight.wav in Resources */ = {isa = PBXBuildFile; fileRef = 340A68CD290BAE4800C1DBCC /* Wonderful Tonight.wav */; };
 		340A68D5290BB7A300C1DBCC /* JHAudioPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340A68D3290BB7A300C1DBCC /* JHAudioPlayerController.swift */; };
 		340A68D6290BB7A300C1DBCC /* JHAudioPlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340A68D4290BB7A300C1DBCC /* JHAudioPlayerController.xib */; };
+		341254D029BB3FE700357DD4 /* sample-mp4-file.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 341254CF29BB3FE700357DD4 /* sample-mp4-file.mp4 */; };
 		343FCF492918A2F5006C391C /* JHAssetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FCF472918A2F5006C391C /* JHAssetController.swift */; };
 		343FCF4A2918A2F5006C391C /* JHAssetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 343FCF482918A2F5006C391C /* JHAssetController.xib */; };
 		345820FA290A71ED00B5D98B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345820F9290A71ED00B5D98B /* AppDelegate.swift */; };
@@ -25,10 +26,13 @@
 		3458212A290A727D00B5D98B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 34582129290A727D00B5D98B /* data.json */; };
 		3458212D290A730800B5D98B /* JHSpeechController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3458212C290A730800B5D98B /* JHSpeechController.swift */; };
 		3463578E291118E600322A37 /* String+Extentsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3463578D291118E600322A37 /* String+Extentsion.swift */; };
+		34B0540F29BEF34100A091F4 /* AVMetadataItem+KeyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B0540E29BEF34100A091F4 /* AVMetadataItem+KeyString.m */; };
+		34B0541929BF0A1400A091F4 /* MYAVPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0541729BF0A1400A091F4 /* MYAVPlayerController.swift */; };
+		34B0541A29BF0A1400A091F4 /* MYAVPlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34B0541829BF0A1400A091F4 /* MYAVPlayerController.xib */; };
+		34B72F40292244AF0085E139 /* Pods_AVFoundationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35939E7BCB0CB9160F6F78A6 /* Pods_AVFoundationDemo.framework */; };
 		34D2C8B32910C27E00844DF3 /* JHAudioRecoderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D2C8B12910C27E00844DF3 /* JHAudioRecoderController.swift */; };
 		34D2C8B42910C27E00844DF3 /* JHAudioRecoderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D2C8B22910C27E00844DF3 /* JHAudioRecoderController.xib */; };
 		34D2C8B72910C48700844DF3 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D2C8B62910C48700844DF3 /* FileManager.swift */; };
-		9EF51484A5CA6280175389E1 /* Pods_AVFoundationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35939E7BCB0CB9160F6F78A6 /* Pods_AVFoundationDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,7 @@
 		340A68CD290BAE4800C1DBCC /* Wonderful Tonight.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Wonderful Tonight.wav"; sourceTree = "<group>"; };
 		340A68D3290BB7A300C1DBCC /* JHAudioPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHAudioPlayerController.swift; sourceTree = "<group>"; };
 		340A68D4290BB7A300C1DBCC /* JHAudioPlayerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHAudioPlayerController.xib; sourceTree = "<group>"; };
+		341254CF29BB3FE700357DD4 /* sample-mp4-file.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sample-mp4-file.mp4"; sourceTree = "<group>"; };
 		343FCF472918A2F5006C391C /* JHAssetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHAssetController.swift; sourceTree = "<group>"; };
 		343FCF482918A2F5006C391C /* JHAssetController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHAssetController.xib; sourceTree = "<group>"; };
 		345820F6290A71ED00B5D98B /* AVFoundationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +77,11 @@
 		34582129290A727D00B5D98B /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3458212C290A730800B5D98B /* JHSpeechController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHSpeechController.swift; sourceTree = "<group>"; };
 		3463578D291118E600322A37 /* String+Extentsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extentsion.swift"; sourceTree = "<group>"; };
+		34B0540D29BEF34100A091F4 /* AVMetadataItem+KeyString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVMetadataItem+KeyString.h"; sourceTree = "<group>"; };
+		34B0540E29BEF34100A091F4 /* AVMetadataItem+KeyString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AVMetadataItem+KeyString.m"; sourceTree = "<group>"; };
+		34B0541729BF0A1400A091F4 /* MYAVPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYAVPlayerController.swift; sourceTree = "<group>"; };
+		34B0541829BF0A1400A091F4 /* MYAVPlayerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYAVPlayerController.xib; sourceTree = "<group>"; };
+		34B72F39292243960085E139 /* AVFoundationDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVFoundationDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		34D2C8B12910C27E00844DF3 /* JHAudioRecoderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHAudioRecoderController.swift; sourceTree = "<group>"; };
 		34D2C8B22910C27E00844DF3 /* JHAudioRecoderController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHAudioRecoderController.xib; sourceTree = "<group>"; };
 		34D2C8B62910C48700844DF3 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
@@ -84,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EF51484A5CA6280175389E1 /* Pods_AVFoundationDemo.framework in Frameworks */,
+				34B72F40292244AF0085E139 /* Pods_AVFoundationDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				340A68CD290BAE4800C1DBCC /* Wonderful Tonight.wav */,
+				341254CF29BB3FE700357DD4 /* sample-mp4-file.mp4 */,
 				340A68CB290BAB9B00C1DBCC /* 576bc2fc91ef22121.mp4 */,
 			);
 			path = src;
@@ -178,6 +189,7 @@
 				345820FB290A71ED00B5D98B /* SceneDelegate.swift */,
 				345820FD290A71ED00B5D98B /* ViewController.swift */,
 				34582129290A727D00B5D98B /* data.json */,
+				34B0541029BF02E500A091F4 /* 005-AVPlayer 播放 */,
 				343FCF462918A2DB006C391C /* 004-JHAssetController */,
 				340A68C7290BA3BD00C1DBCC /* 003-AudioRecoder */,
 				340A68C4290BA36E00C1DBCC /* 002-AudioPlayer */,
@@ -188,6 +200,7 @@
 				34582102290A71EE00B5D98B /* Assets.xcassets */,
 				34582104290A71EE00B5D98B /* LaunchScreen.storyboard */,
 				34582107290A71EE00B5D98B /* Info.plist */,
+				34B72F39292243960085E139 /* AVFoundationDemo-Bridging-Header.h */,
 			);
 			path = AVFoundationDemo;
 			sourceTree = "<group>";
@@ -217,11 +230,22 @@
 			path = "001-Speech";
 			sourceTree = "<group>";
 		};
+		34B0541029BF02E500A091F4 /* 005-AVPlayer 播放 */ = {
+			isa = PBXGroup;
+			children = (
+				34B0541729BF0A1400A091F4 /* MYAVPlayerController.swift */,
+				34B0541829BF0A1400A091F4 /* MYAVPlayerController.xib */,
+			);
+			path = "005-AVPlayer 播放";
+			sourceTree = "<group>";
+		};
 		34D2C8B52910C43F00844DF3 /* utils */ = {
 			isa = PBXGroup;
 			children = (
 				34D2C8B62910C48700844DF3 /* FileManager.swift */,
 				3463578D291118E600322A37 /* String+Extentsion.swift */,
+				34B0540D29BEF34100A091F4 /* AVMetadataItem+KeyString.h */,
+				34B0540E29BEF34100A091F4 /* AVMetadataItem+KeyString.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -305,6 +329,7 @@
 				TargetAttributes = {
 					345820F5290A71ED00B5D98B = {
 						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1340;
 					};
 					3458210B290A71EE00B5D98B = {
 						CreatedOnToolsVersion = 13.4;
@@ -345,7 +370,9 @@
 				34D2C8B42910C27E00844DF3 /* JHAudioRecoderController.xib in Resources */,
 				343FCF4A2918A2F5006C391C /* JHAssetController.xib in Resources */,
 				340A68CC290BAB9B00C1DBCC /* 576bc2fc91ef22121.mp4 in Resources */,
+				34B0541A29BF0A1400A091F4 /* MYAVPlayerController.xib in Resources */,
 				34582106290A71EE00B5D98B /* LaunchScreen.storyboard in Resources */,
+				341254D029BB3FE700357DD4 /* sample-mp4-file.mp4 in Resources */,
 				340A68CE290BAE4800C1DBCC /* Wonderful Tonight.wav in Resources */,
 				34582103290A71EE00B5D98B /* Assets.xcassets in Resources */,
 				34582101290A71ED00B5D98B /* Main.storyboard in Resources */,
@@ -416,6 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B0541929BF0A1400A091F4 /* MYAVPlayerController.swift in Sources */,
 				343FCF492918A2F5006C391C /* JHAssetController.swift in Sources */,
 				345820FE290A71ED00B5D98B /* ViewController.swift in Sources */,
 				34D2C8B32910C27E00844DF3 /* JHAudioRecoderController.swift in Sources */,
@@ -423,6 +451,7 @@
 				34D2C8B72910C48700844DF3 /* FileManager.swift in Sources */,
 				345820FA290A71ED00B5D98B /* AppDelegate.swift in Sources */,
 				3463578E291118E600322A37 /* String+Extentsion.swift in Sources */,
+				34B0540F29BEF34100A091F4 /* AVMetadataItem+KeyString.m in Sources */,
 				345820FC290A71ED00B5D98B /* SceneDelegate.swift in Sources */,
 				340A68D5290BB7A300C1DBCC /* JHAudioPlayerController.swift in Sources */,
 			);
@@ -600,6 +629,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8YR627Z7UA;
@@ -618,6 +648,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sunshine.com.AVFoundationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AVFoundationDemo/AVFoundationDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -629,6 +661,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8YR627Z7UA;
@@ -647,6 +680,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sunshine.com.AVFoundationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AVFoundationDemo/AVFoundationDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

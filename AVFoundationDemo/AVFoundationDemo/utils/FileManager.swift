@@ -94,7 +94,7 @@ extension MyFileManager {
     }
 
     /// 根据传入的文件夹名创建文件夹📂
-    private func createDirectory(_ directoryName: String) -> String? {
+    func createDirectory(_ directoryName: String) -> String? {
         /// 获取路径
         let path = MyFileManager.share.getDocumentsPath()
         /// 创建文件管理者
@@ -117,7 +117,7 @@ extension MyFileManager {
     }
     
     /// 根据传入的文件名创建文件
-    private func getFile(_ fileName: String) -> String {
+    func getFile(_ fileName: String) -> String {
         /// 创建文件管理者
         let fileManger = FileManager.default
         /// 创建文件
