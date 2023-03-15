@@ -18,6 +18,18 @@
     {
         "title":"005-AVPlayer 播放",
         "class": "MYAVPlayerController"
+    },
+    {
+        "title":"006-PlayerView画中画",
+        "class": "MYPlayerViewController"
+    },
+    {
+        "title":"007-视频捕获",
+        "class": "MYCaptureSessionController"
+    },
+    {
+        "title":"008-高级捕获",
+        "class": "MYAdvancedCaptureController"
     }
 ]
 

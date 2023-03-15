@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MYAdvancedCaptureController" customModule="AVFoundationDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="egP-u5-Sj2" id="2mb-yh-OLk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egP-u5-Sj2">
+                    <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                    <color key="backgroundColor" systemColor="separatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="KxW-kv-879"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjD-Fn-P24">
+                    <rect key="frame" x="30" y="294" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="sxv-Wo-Ki1"/>
+                        <constraint firstAttribute="width" constant="100" id="uRC-14-a6J"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="开始"/>
+                    <connections>
+                        <action selector="startSession:" destination="-1" eventType="touchUpInside" id="VDo-US-3fC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ8-lT-1ej">
+                    <rect key="frame" x="284" y="294" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="MHO-eZ-yOS"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="结束"/>
+                    <connections>
+                        <action selector="stopSession:" destination="-1" eventType="touchUpInside" id="Gz7-rj-fuY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gjD-Fn-P24" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="0Qx-bi-PQ5"/>
+                <constraint firstItem="bQ8-lT-1ej" firstAttribute="bottom" secondItem="gjD-Fn-P24" secondAttribute="bottom" id="94s-o1-ZHS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bQ8-lT-1ej" secondAttribute="trailing" constant="30" id="IBU-a9-bGF"/>
+                <constraint firstItem="gjD-Fn-P24" firstAttribute="top" secondItem="egP-u5-Sj2" secondAttribute="bottom" constant="50" id="LUd-Ge-yg1"/>
+                <constraint firstItem="egP-u5-Sj2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iXZ-Y2-FGI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="egP-u5-Sj2" secondAttribute="trailing" id="lcG-f2-bSZ"/>
+                <constraint firstItem="egP-u5-Sj2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wjs-DP-Tcn"/>
+                <constraint firstItem="bQ8-lT-1ej" firstAttribute="top" secondItem="gjD-Fn-P24" secondAttribute="top" id="zVK-V7-W61"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="116"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
