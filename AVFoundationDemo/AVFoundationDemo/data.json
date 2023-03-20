@@ -30,6 +30,14 @@
     {
         "title":"008-高级捕获",
         "class": "MYAdvancedCaptureController"
+    },
+    {
+        "title":"009-音视频导出",
+        "class": "MYAssetExportController"
+    },
+    {
+        "title":"010-组合媒体",
+        "class": "MYAVCompositionController"
     }
 ]
 

@@ -16,3 +16,12 @@ extension String {
         return NSString(string: self).components(separatedBy: string)
     }
 }
+
+extension Date {
+    /// 获取当前时间-毫秒级
+    /// - Returns: 时间
+    public func getCurrentTimeMillion() -> Int {
+        let a: TimeInterval = Date.init(timeIntervalSinceNow: 0).timeIntervalSince1970
+        return Int(CLongLong(round(a*1000)))
+    }
+}

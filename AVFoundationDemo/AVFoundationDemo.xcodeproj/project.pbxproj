@@ -28,18 +28,20 @@
 		3463578E291118E600322A37 /* String+Extentsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3463578D291118E600322A37 /* String+Extentsion.swift */; };
 		3482A57329C19C1F0005AC38 /* MYAdvancedCaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3482A57129C19C1F0005AC38 /* MYAdvancedCaptureController.swift */; };
 		3482A57429C19C1F0005AC38 /* MYAdvancedCaptureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3482A57229C19C1F0005AC38 /* MYAdvancedCaptureController.xib */; };
-		34A539E529C08D5500978158 /* kViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A539E429C08D5500978158 /* kViewController.swift */; };
+		3482A57E29C1C9AE0005AC38 /* MYAssetExportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3482A57C29C1C9AE0005AC38 /* MYAssetExportController.swift */; };
+		3482A57F29C1C9AE0005AC38 /* MYAssetExportController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3482A57D29C1C9AE0005AC38 /* MYAssetExportController.xib */; };
+		3482A58329C3066F0005AC38 /* MYAVCompositionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3482A58129C3066F0005AC38 /* MYAVCompositionController.swift */; };
+		3482A58429C3066F0005AC38 /* MYAVCompositionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3482A58229C3066F0005AC38 /* MYAVCompositionController.xib */; };
 		34B00B4E29C03F5C007064C7 /* MYPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B00B4C29C03F5C007064C7 /* MYPlayerViewController.swift */; };
 		34B00B4F29C03F5C007064C7 /* MYPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34B00B4D29C03F5C007064C7 /* MYPlayerViewController.xib */; };
 		34B00B5329C0501E007064C7 /* MYCaptureSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B00B5129C0501E007064C7 /* MYCaptureSessionController.swift */; };
-		34B00B5429C0501E007064C7 /* MYCaptureSessionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34B00B5229C0501E007064C7 /* MYCaptureSessionController.xib */; };
 		34B0540F29BEF34100A091F4 /* AVMetadataItem+KeyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B0540E29BEF34100A091F4 /* AVMetadataItem+KeyString.m */; };
 		34B0541929BF0A1400A091F4 /* MYAVPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0541729BF0A1400A091F4 /* MYAVPlayerController.swift */; };
 		34B0541A29BF0A1400A091F4 /* MYAVPlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34B0541829BF0A1400A091F4 /* MYAVPlayerController.xib */; };
 		34B72F40292244AF0085E139 /* Pods_AVFoundationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35939E7BCB0CB9160F6F78A6 /* Pods_AVFoundationDemo.framework */; };
 		34D2C8B32910C27E00844DF3 /* JHAudioRecoderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D2C8B12910C27E00844DF3 /* JHAudioRecoderController.swift */; };
 		34D2C8B42910C27E00844DF3 /* JHAudioRecoderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D2C8B22910C27E00844DF3 /* JHAudioRecoderController.xib */; };
-		34D2C8B72910C48700844DF3 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D2C8B62910C48700844DF3 /* FileManager.swift */; };
+		34D2C8B72910C48700844DF3 /* MyFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D2C8B62910C48700844DF3 /* MyFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,11 +88,13 @@
 		3463578D291118E600322A37 /* String+Extentsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extentsion.swift"; sourceTree = "<group>"; };
 		3482A57129C19C1F0005AC38 /* MYAdvancedCaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYAdvancedCaptureController.swift; sourceTree = "<group>"; };
 		3482A57229C19C1F0005AC38 /* MYAdvancedCaptureController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYAdvancedCaptureController.xib; sourceTree = "<group>"; };
-		34A539E429C08D5500978158 /* kViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kViewController.swift; sourceTree = "<group>"; };
+		3482A57C29C1C9AE0005AC38 /* MYAssetExportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYAssetExportController.swift; sourceTree = "<group>"; };
+		3482A57D29C1C9AE0005AC38 /* MYAssetExportController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYAssetExportController.xib; sourceTree = "<group>"; };
+		3482A58129C3066F0005AC38 /* MYAVCompositionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYAVCompositionController.swift; sourceTree = "<group>"; };
+		3482A58229C3066F0005AC38 /* MYAVCompositionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYAVCompositionController.xib; sourceTree = "<group>"; };
 		34B00B4C29C03F5C007064C7 /* MYPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYPlayerViewController.swift; sourceTree = "<group>"; };
 		34B00B4D29C03F5C007064C7 /* MYPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYPlayerViewController.xib; sourceTree = "<group>"; };
 		34B00B5129C0501E007064C7 /* MYCaptureSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYCaptureSessionController.swift; sourceTree = "<group>"; };
-		34B00B5229C0501E007064C7 /* MYCaptureSessionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYCaptureSessionController.xib; sourceTree = "<group>"; };
 		34B0540D29BEF34100A091F4 /* AVMetadataItem+KeyString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVMetadataItem+KeyString.h"; sourceTree = "<group>"; };
 		34B0540E29BEF34100A091F4 /* AVMetadataItem+KeyString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AVMetadataItem+KeyString.m"; sourceTree = "<group>"; };
 		34B0541729BF0A1400A091F4 /* MYAVPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYAVPlayerController.swift; sourceTree = "<group>"; };
@@ -98,7 +102,7 @@
 		34B72F39292243960085E139 /* AVFoundationDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVFoundationDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		34D2C8B12910C27E00844DF3 /* JHAudioRecoderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHAudioRecoderController.swift; sourceTree = "<group>"; };
 		34D2C8B22910C27E00844DF3 /* JHAudioRecoderController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JHAudioRecoderController.xib; sourceTree = "<group>"; };
-		34D2C8B62910C48700844DF3 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		34D2C8B62910C48700844DF3 /* MyFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFileManager.swift; sourceTree = "<group>"; };
 		35939E7BCB0CB9160F6F78A6 /* Pods_AVFoundationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFoundationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86386F06252E73739D30278 /* Pods-AVFoundationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationDemo.debug.xcconfig"; path = "Target Support Files/Pods-AVFoundationDemo/Pods-AVFoundationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,6 +207,8 @@
 				345820FB290A71ED00B5D98B /* SceneDelegate.swift */,
 				345820FD290A71ED00B5D98B /* ViewController.swift */,
 				34582129290A727D00B5D98B /* data.json */,
+				3482A58029C306650005AC38 /* 010-组合媒体 */,
+				3482A57529C1C8810005AC38 /* 009-音视频导出 */,
 				3482A57029C19C140005AC38 /* 008-高级捕获 */,
 				34B00B5029C05010007064C7 /* 007-视频捕获 */,
 				34B00B4B29C03F44007064C7 /* 006-PlayerView画中画 */,
@@ -256,6 +262,24 @@
 			path = "008-高级捕获";
 			sourceTree = "<group>";
 		};
+		3482A57529C1C8810005AC38 /* 009-音视频导出 */ = {
+			isa = PBXGroup;
+			children = (
+				3482A57C29C1C9AE0005AC38 /* MYAssetExportController.swift */,
+				3482A57D29C1C9AE0005AC38 /* MYAssetExportController.xib */,
+			);
+			path = "009-音视频导出";
+			sourceTree = "<group>";
+		};
+		3482A58029C306650005AC38 /* 010-组合媒体 */ = {
+			isa = PBXGroup;
+			children = (
+				3482A58129C3066F0005AC38 /* MYAVCompositionController.swift */,
+				3482A58229C3066F0005AC38 /* MYAVCompositionController.xib */,
+			);
+			path = "010-组合媒体";
+			sourceTree = "<group>";
+		};
 		34B00B4B29C03F44007064C7 /* 006-PlayerView画中画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,8 +293,6 @@
 			isa = PBXGroup;
 			children = (
 				34B00B5129C0501E007064C7 /* MYCaptureSessionController.swift */,
-				34A539E429C08D5500978158 /* kViewController.swift */,
-				34B00B5229C0501E007064C7 /* MYCaptureSessionController.xib */,
 			);
 			path = "007-视频捕获";
 			sourceTree = "<group>";
@@ -287,7 +309,7 @@
 		34D2C8B52910C43F00844DF3 /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				34D2C8B62910C48700844DF3 /* FileManager.swift */,
+				34D2C8B62910C48700844DF3 /* MyFileManager.swift */,
 				3463578D291118E600322A37 /* String+Extentsion.swift */,
 				34B0540D29BEF34100A091F4 /* AVMetadataItem+KeyString.h */,
 				34B0540E29BEF34100A091F4 /* AVMetadataItem+KeyString.m */,
@@ -416,13 +438,14 @@
 				3482A57429C19C1F0005AC38 /* MYAdvancedCaptureController.xib in Resources */,
 				34D2C8B42910C27E00844DF3 /* JHAudioRecoderController.xib in Resources */,
 				343FCF4A2918A2F5006C391C /* JHAssetController.xib in Resources */,
+				3482A58429C3066F0005AC38 /* MYAVCompositionController.xib in Resources */,
 				340A68CC290BAB9B00C1DBCC /* 576bc2fc91ef22121.mp4 in Resources */,
 				34B0541A29BF0A1400A091F4 /* MYAVPlayerController.xib in Resources */,
 				34582106290A71EE00B5D98B /* LaunchScreen.storyboard in Resources */,
 				341254D029BB3FE700357DD4 /* sample-mp4-file.mp4 in Resources */,
 				340A68CE290BAE4800C1DBCC /* Wonderful Tonight.wav in Resources */,
+				3482A57F29C1C9AE0005AC38 /* MYAssetExportController.xib in Resources */,
 				34582103290A71EE00B5D98B /* Assets.xcassets in Resources */,
-				34B00B5429C0501E007064C7 /* MYCaptureSessionController.xib in Resources */,
 				34582101290A71ED00B5D98B /* Main.storyboard in Resources */,
 				3458212A290A727D00B5D98B /* data.json in Resources */,
 			);
@@ -499,13 +522,14 @@
 				34D2C8B32910C27E00844DF3 /* JHAudioRecoderController.swift in Sources */,
 				3458212D290A730800B5D98B /* JHSpeechController.swift in Sources */,
 				34B00B4E29C03F5C007064C7 /* MYPlayerViewController.swift in Sources */,
-				34D2C8B72910C48700844DF3 /* FileManager.swift in Sources */,
+				34D2C8B72910C48700844DF3 /* MyFileManager.swift in Sources */,
 				345820FA290A71ED00B5D98B /* AppDelegate.swift in Sources */,
 				3463578E291118E600322A37 /* String+Extentsion.swift in Sources */,
 				34B0540F29BEF34100A091F4 /* AVMetadataItem+KeyString.m in Sources */,
+				3482A57E29C1C9AE0005AC38 /* MYAssetExportController.swift in Sources */,
 				345820FC290A71ED00B5D98B /* SceneDelegate.swift in Sources */,
-				34A539E529C08D5500978158 /* kViewController.swift in Sources */,
 				340A68D5290BB7A300C1DBCC /* JHAudioPlayerController.swift in Sources */,
+				3482A58329C3066F0005AC38 /* MYAVCompositionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
